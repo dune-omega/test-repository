@@ -5,7 +5,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-    This is the changes that's been made in the Github repository
+      This is the changes that's been made in the Github repository
     </div>
   );
 }
