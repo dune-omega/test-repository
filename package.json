@@ -1,5 +1,5 @@
 {
-  "name": "conflict-test",
+  "name": "react-project",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -33,9 +33,6 @@
       "react-app/jest"
     ]
   },
-  "eslintIgnore": [
-    "/src/**/*.scss.d.ts"
-  ],
   "browserslist": {
     "production": [
       ">0.2%",
@@ -47,5 +44,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/dune-omega/test-repository.git",
+  "author": "dune-omega <duneomega@gmail.com>",
+  "license": "MIT"
 }
