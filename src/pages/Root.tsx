@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { useNavigate, useRoutes } from "react-router-dom";
 import logo from "../assets/logo.svg";
 import { items } from "../configs/arrays";
+import AddFriends from "./addFriends";
 import Home from "./home";
 import "./Root.scss";
 
@@ -36,6 +37,10 @@ const Root: React.FC = () => {
           {
             path: "/",
             element: <Home />,
+          },
+          {
+            path: "add-friends",
+            element: <AddFriends />,
           },
         ])}
       </Layout>
