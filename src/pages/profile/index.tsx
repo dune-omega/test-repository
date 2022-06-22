@@ -1,18 +1,24 @@
 import {
   CompassOutlined,
-  GiftOutlined,
   HeartOutlined,
   MailOutlined,
   PhoneOutlined,
 } from "@ant-design/icons";
-import { Col, Row, Space, Typography } from "antd";
+import { Col, Row, Typography } from "antd";
+import { run } from "concent";
 import { useParams } from "react-router-dom";
 import DescriptionComp from "../../components/DescriptionComp";
 import { URL_SINGLE_USER } from "../../configs/links";
-import { FlexStyle } from "../../configs/objects";
 import useFetchAPI from "../../hooks/useFetchAPI";
 
-const { Title, Text } = Typography;
+const { Title } = Typography;
+
+run({
+  foo: {
+    //foo模块定义
+    state: {}, //必填
+  },
+});
 
 const Profile = () => {
   const { id } = useParams();
