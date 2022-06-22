@@ -4,6 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import "./index.css";
 import "antd/dist/antd.min.css";
 import Root from "./pages/Root";
+import { UserContext } from "./context/userContext";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -11,7 +12,9 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Root />
+      <UserContext>
+        <Root />
+      </UserContext>
     </BrowserRouter>
   </React.StrictMode>
 );

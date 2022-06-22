@@ -10,7 +10,6 @@ export type LOCATION = {
     latitude: string;
     longitude: string;
   };
-  country: string;
   postcode: number;
   state: string;
   street: {
@@ -39,7 +38,7 @@ export type PICTURE = {
   thumbnail: string;
 };
 
-export type User = {
+export interface User {
   cell: string;
   dob: DOB;
   email: string;
@@ -52,4 +51,9 @@ export type User = {
   phone: string;
   picture: PICTURE;
   registered: REGISTERED;
+}
+
+export type MappedUser = Omit<User, "name"> & {
+  name: string;
+  title: string;
 };

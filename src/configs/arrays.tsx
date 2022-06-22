@@ -22,3 +22,26 @@ export const items: MenuItem[] = [
   ]),
   getItem("Files", "files", <FileOutlined />),
 ];
+
+export const columns: any = [
+  {
+    title: "Title",
+    dataIndex: "title",
+    key: "title",
+  },
+  {
+    title: "Name",
+    dataIndex: "name",
+    key: "name",
+  },
+  {
+    title: "Email",
+    dataIndex: "email",
+    key: "email",
+  },
+  {
+    title: "Phone",
+    dataIndex: "phone",
+    key: "phone",
+  },
+];
