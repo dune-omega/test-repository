@@ -1,14 +1,15 @@
-import axios from "axios";
-import { URL_ALL_USERS } from "./links";
+type initState = {
+  count: number;
+};
 
 export const UserConfig = {
-  User: {
-    state: {},
-    computed: {
-      async getUsers(newState: any) {
-        await axios
-          .get(URL_ALL_USERS)
-          .then(({ data: { results } }) => newState);
+  foo: {
+    state: {
+      count: 0,
+    },
+    reducer: {
+      increment: (_: any, moduleState: initState, actionCTX: any) => {
+        actionCTX.setState({ count: moduleState.count + 1 });
       },
     },
   },
