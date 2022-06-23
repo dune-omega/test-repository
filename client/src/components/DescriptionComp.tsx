@@ -15,7 +15,7 @@ const DescriptionComp = ({ icon, data, title, data2 }: Props) => {
     <Space style={FlexStyle}>
       {icon}
       <Text>
-        {title}: {data}, {data2}
+        {title}: {data} {data2}
       </Text>
     </Space>
   );

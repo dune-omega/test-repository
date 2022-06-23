@@ -32,7 +32,6 @@ const Profile = () => {
       style={{
         fontFamily: "Poppins",
         textAlign: "center",
-        textTransform: "capitalize",
       }}
     >
       <Col
@@ -68,7 +67,7 @@ const Profile = () => {
           icon={<HeartOutlined />}
         />
         <DescriptionComp
-          data={user?.location.state}
+          data={`${user?.location.state},`}
           data2={user?.location.city}
           title="Location"
           icon={<CompassOutlined />}
